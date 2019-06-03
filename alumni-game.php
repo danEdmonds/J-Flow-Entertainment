@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
 
 <header class="header">
-    <h1 class="layout"><a href="index.html">J Flow Entertainment</a></h1>
+    <h1 class="layout"><a href="/">J Flow Entertainment</a></h1>
 </header>
 
 <main>
@@ -18,7 +18,7 @@
                 <h2>We're back for more summer basketball fun</h2>
                 <p>Don't miss your chance to see some amazing WVU alumni basketball and help raise money for
                     Special Olympics West Virginia!</p>
-                <p><a href="#" class="button">Get Tickets</a></p>
+                <p><a href="https://wvalumnigame.ticketleap.com/2019/dates/Jul-06-2019_at_0700PM" target="_blank" class="button">Get Tickets</a></p>
             </div>
         </div>
         <div class="tbt-section__image">
@@ -30,7 +30,7 @@
         <div class="layout tbt-section__text">
             <h2>A special thanks to our sponsors</h2>
             <p>
-                <a href="#" class="button">Sponsor Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf35YM0B0WMeyFFJKwzqOxt2R-jRZGWYeity3cuLGMx_Tv2Yw/viewform" target="_blank" class="button">Sponsor Us</a>
                 <a href="#" class="button">Advertise</a>
             </p>
         </div>
@@ -46,7 +46,7 @@
                     Special Olympics West Virginia, this year's chosen charity.</p>
                 <p>
                     <a href="#" class="button button--blue">Learn More</a>
-                    <a href="#" class="button button--blue">Get Tickets</a>
+                    <a href="https://wvalumnigame.ticketleap.com/2019/dates/Jul-06-2019_at_0700PM" target="_blank" class="button button--blue">Get Tickets</a>
                 </p>
             </div>
         </div>
@@ -60,7 +60,7 @@
                 Philip / Juwan Staten / Nate Adrian / Truck Bryant / Elijah Macon / Brandon Watkins / Esa Ahmad /
                 Joe Mazzulla / Jarrod West / Brent Solheim / Josh Yeager / Darryl Prue / Marcus Goree / John Holton
                 / James Long</p>
-            <p><a href="#" class="button">Get Tickets</a></p>
+            <p><a href="https://wvalumnigame.ticketleap.com/2019/dates/Jul-06-2019_at_0700PM" target="_blank" class="button">Get Tickets</a></p>
         </div>
     </section>
 

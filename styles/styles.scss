@@ -60,6 +60,12 @@ a {
 	transition-duration: .25s;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 h1,
 h2 {
 	margin-top: 0;
@@ -117,9 +123,8 @@ img {
     text-align: center;
 
 	h1 {
-		font-size: 1em;
+		font-size: .75em;
 		font-weight: normal;
-		// text-transform: none;
 	}
 
 	a {
@@ -204,15 +209,17 @@ img {
 	}
 }
 
-.events {
-	padding-top: 4rem;
+.tbt-section--events {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 	text-align: center;
+}
 
-	&__layout {
-		display: grid;
-		grid-gap: 4rem;
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-	}
+.events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    margin-left: -2rem;
+    margin-right: -2rem;
 
 	li {
 		margin-top: 1rem;
@@ -225,29 +232,37 @@ img {
 
 .event {
 	$self: &;
-	display: flex;
-	flex-direction: column;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 200px auto 168px;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    & + & {
+        border-left: 1px solid rgba(white, .1);
+    }
 
 	&__logo {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		color: $wvu-yellow;
+        color: white;
+        
+        b {
+            display: block;
+            color: $wvu-yellow;
+        }
 
-		#{$self}--podcast & {
-			font-family: "Black Heart";
-			font-size: 4rem;
-			font-weight: normal;
-			line-height: 1;
-			letter-spacing: 0.25rem;
-		}
-	}
-
-	img {
-		width: auto;
-		height: auto;
-		max-width: 100%;
+		// #{$self}--podcast & {
+		// 	font-family: "Black Heart";
+		// 	font-size: 4rem;
+		// 	font-weight: normal;
+		// 	line-height: 1;
+		// 	letter-spacing: 0.25rem;
+        // }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
 	}
 }
 
@@ -255,7 +270,7 @@ img {
 	display: inline-block;
 	padding: 0.5rem 0.75rem;
 	font-size: 1.125rem;
-	background-color: $wvu-yellow;
+    background-color: $wvu-yellow;
 	border-radius: 0.25rem;
 	color: $wvu-blue;
 	font-weight: bold;
@@ -436,7 +451,12 @@ img {
             height: 100%;
             object-fit: cover;
         }
-	}	
+    }	
+    
+    h1 {
+        font-size: 3em;
+        line-height: 1;
+    }
 
 	h2 {
 		margin-top: 0;
@@ -496,8 +516,6 @@ img {
 	&__control {
         padding: 1.75rem .75rem;
         background-color: $wvu-yellow;
-        border: none;
-        cursor: pointer;
 
 		&--previous {
             transform: translateX(-3.5rem);

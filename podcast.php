@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
 
 <header class="header">
-    <h1 class="layout"><a href="index.html">J Flow Entertainment</a></h1>
+    <h1 class="layout"><a href="/">J Flow Entertainment</a></h1>
 </header>
 
 <main class="podcast">
@@ -28,7 +28,7 @@
             </ul>
             <p>A podcast starring Kevin Jones, Da'Sean Butler, John Flowers and Ashley</p>
             <h2>Advertise With Us</h2>
-            <p>Contact Us: <a href="jflowent@yahoo.com">jflowent@yahoo.com</a></p>
+            <p>Contact Us: <a href="mailto:jflowent@yahoo.com">jflowent@yahoo.com</a></p>
             <div class="podcast__player">
                 <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/9870305/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
             </div>

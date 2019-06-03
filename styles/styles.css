@@ -40,6 +40,11 @@ a {
   transition-property: background-color, color;
   transition-duration: .25s; }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
 h1,
 h2 {
   margin-top: 0;
@@ -89,7 +94,7 @@ img {
   letter-spacing: 1px;
   text-align: center; }
   .header h1 {
-    font-size: 1em;
+    font-size: .75em;
     font-weight: normal; }
   .header a {
     color: white;
@@ -141,37 +146,38 @@ img {
     transform: translate(4px, -1px);
     fill: currentColor; }
 
-.events {
+.tbt-section--events {
   padding-top: 4rem;
+  padding-bottom: 4rem;
   text-align: center; }
-  .events__layout {
-    display: grid;
-    grid-gap: 4rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  margin-left: -2rem;
+  margin-right: -2rem; }
   .events li {
     margin-top: 1rem; }
   .events .button {
     width: 100%; }
 
 .event {
-  display: flex;
-  flex-direction: column; }
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 200px auto 168px;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .event + .event {
+    border-left: 1px solid rgba(255, 255, 255, 0.1); }
   .event__logo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #eaaa00; }
-    .event--podcast .event__logo {
-      font-family: "Black Heart";
-      font-size: 4rem;
-      font-weight: normal;
-      line-height: 1;
-      letter-spacing: 0.25rem; }
-  .event img {
-    width: auto;
-    height: auto;
-    max-width: 100%; }
+    color: white; }
+    .event__logo b {
+      display: block;
+      color: #eaaa00; }
+    .event__logo img {
+      width: 100%;
+      height: auto; }
 
 .button {
   display: inline-block;
@@ -288,6 +294,9 @@ img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+  .tbt-section h1 {
+    font-size: 3em;
+    line-height: 1; }
   .tbt-section h2 {
     margin-top: 0;
     font-size: 2.5em;
@@ -329,9 +338,7 @@ img {
     margin-top: 1rem; }
   .carousel__control {
     padding: 1.75rem .75rem;
-    background-color: #eaaa00;
-    border: none;
-    cursor: pointer; }
+    background-color: #eaaa00; }
     .carousel__control--previous {
       transform: translateX(-3.5rem); }
     .carousel__control--next {
